@@ -8,10 +8,9 @@ This is where I will talk a little bit about Red River Gorge!
 
 2. Red River Gorge is home to the Virgina Big-Eared Bat, the Indiana Bat and the Red Cockaded Woodpecker; all three of which are endangered animals.
 
-[Red River Gorge Map]
-(https://www.mobilemaplets.com/thumbnails/2624_thumbnail-1024.jpg)
+[Red River Gorge Map](https://www.mobilemaplets.com/thumbnails/2624_thumbnail-1024.jpg)
 
 ![Red River Gorge Arch](https://www.outdoorproject.com/sites/default/files/styles/cboxshow/public/1494091479/nb1.jpg?itok=jfy_lrAU)
 
 ### Sources
-http://roadsriversandtrails.com/rrt_adventures/10-things-you-didnt-know-about-red-river-gorge/
+[roadsriversandtrails.com](http://roadsriversandtrails.com/rrt_adventures/10-things-you-didnt-know-about-red-river-gorge/)
