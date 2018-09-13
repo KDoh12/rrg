@@ -13,4 +13,4 @@ This is where I will talk a little bit about Red River Gorge!
 ![Red River Gorge Arch](https://www.outdoorproject.com/sites/default/files/styles/cboxshow/public/1494091479/nb1.jpg?itok=jfy_lrAU)
 
 ### Sources
-http://roadsriversandtrails.com/rrt_adventures/10-things-you-didnt-know-about-red-river-gorge/
+[roadsriversandtrails.com](http://roadsriversandtrails.com/rrt_adventures/10-things-you-didnt-know-about-red-river-gorge/)
