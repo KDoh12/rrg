@@ -1,10 +1,8 @@
 # Field Report
 
-Kevin Dohner
-
-November 23, 2018
-
-Pine Ridge, KY
+Kevin Dohner /n
+November 23, 2018 /n
+Pine Ridge, KY /n
 
 The landform I chose to visit was Sky Bridge. Sky Bridge is one of the many magnificent arches that reside in the Red River Gorge. This beautiful arch is located on the 0.8 mi long Sky Bridge Loop Trail at the very end of Sky Bridge Rd. The Arch is approximately 90-100ft across and approximately 30-40ft high.
 
