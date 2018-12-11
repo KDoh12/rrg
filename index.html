@@ -1,205 +1,173 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset=utf-8 />
-    <title>Sky Bridge and the Named Arches of the U.S.</title>
-    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+	<meta charset=utf-8 />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css" />
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,900i" rel="stylesheet">
+	<!-- The title tag is what search engines and browsers use for your page title. -->
+	<title>Red River Gorge, Kentucky</title>
 
-    <style>
-        /* UK Colors: 
-            #c7c9c8 light gray 
-            #63666a dark gray
-            #15397f dark blue
-            #009bda light blue
-            #0033a0 official blue
-        */
-        body {
-            margin: 0;
-            padding: 0;
-            background: #c7c9c8;
-            font-family: 'Lato', sans-serif;
-            font-weight: 300;
-            color: #3d3d3d;
-            font-size: 1.1em;
+	<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.4/leaflet.css" />
+	<link href="https://fonts.googleapis.com/css?family=Signika+Negative:300,700" rel="stylesheet">
+	<link href="jttps://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
 
-        }
+	<!-- Define the styles for our page elements -->
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			background: #f5f5f5;
+			font-family: 'Signika Negative', sans-serif;
+			color: #979797;
+			font-size: 1.0em;
+			font-weight: 300;
+			line-height: 1.05em;
+		}
 
-        section {
-            width: 80%;
-            margin: 10px auto;
-        }
+		section {
+			width: 80%;
+			margin: 20px auto;
+		}
 
-        h1 {
-            font-family: 'Lato', sans-serif;
-            font-weight: 900i;
-            font-size: 2.8em;
-            font-style: italic;
-            /* The em unit. 3x the current size */
-            letter-spacing: .01em;
-            margin: 0 0 15px 0;
-            /* text-transform: uppercase; */
-        }
+		h1 {
+			font-size: 4em;
+			font-family: 'Dancing Script', cursive;
+			color: #333333;
+			line-height: 1.2em
+		}
 
-        h2 {
-            font-family: 'Lato', sans-serif;
-            font-weight: 300;
-            color: #63666a;
-            font-size: 1.5em;
-            letter-spacing: .06em;
-            font-style: italic;
-            margin: 0 0 25px 0;
-        }
+		h2 {
+			font-size: 2em;
+			font-family: 'Signika Negative', sans-serif;
+			letter-spacing: .05em;
+			font-weight: 300;
+			color: #555555;
+			padding: 20px 0 0 0;
+		}
 
-        p {
-            font-size: 1.15em;
-            line-height: 1.8em;
-            margin: 0 0 25px 0;
-        }
+		h3 {
+			font-size: 1.5em;
+			font-family: 'Dancing Script', cursive;
+			letter-spacing: .04em;
+			color: #888888;
+		}
 
-        a {
-            color: #15397f;
-            text-decoration: none;
-        }
 
-        a:hover {
-            text-decoration: underline;
-        }
+		p {
+			font-size: 1.1em;
+			line-height: 1.4em;
+		}
 
-        ul {
-            padding: 0px 20px 4px 20px;
-            /* font-size: 0.96em; */
-            line-height: 1.6em;
-            color: #63666a;
-        }
+		a {
+			color: #ff4323;
+			text-decoration: none;
+		}
 
-        li {
-            margin: 10px 0
-        }
+		a:hover {
+			text-decoration: underline;
+			color: black;
+		}
 
-        #map {
-            width: 100%;
-            margin: 0px auto;
+		ul {
+			padding-left: 20px;
+		}
 
-        }
+		li {
+			margin: 10px 0
+		}
 
-        .max-image-width {
-            width: 100%;
-        }
+		#map {
+			width: 100%;
+			margin: 10px auto;
+		}
 
-        /* add custom style class here */
+		.max-image-width {
+			width: 100%;
+		}
 
-        .linkbox {
-            margin: 3px 0 20px 0;
-            display: block;
-            font-weight: 300;
-        }
+		.linkbox {
+			margin: 3px 0 20px 0;
+			display: block;
+			font-weight: 300;
+		}
 
-        hr {
-            border: 0px;
-            border-bottom: 1px solid #3d3d3d;
-            padding-top: 20px;
-        }
+		hr {
+			border: 0px;
+			border-bottom: 1px solid #bbbbbb;
+			padding-top: 20px;
+		}
 
-        /* Use float property to make two-column layout */
-
-        .first-column {
-            float: left;
-            width: 48%;
-            padding-right: 20px;
-        }
-
-        .column {
-            float: left;
-            width: 48%;
-        }
-
-        /* Clear floats after the columns */
-
-        .row:after {
-            content: "";
-            display: table;
-            clear: both;
-        }
-
-        .svg-title {
-            float: left;
-            display: inline-block;
-            width: 75px;
-            margin: -8px 10px -8px 0;
-        }
-
-        /* When browser is 800px wide or less */
-
-        @media screen and (max-width: 800px) {
-
-            .first-column,
-            .column {
-                width: 100%;
-            }
-        }
-    </style>
+		#map {
+			width: 100%;
+			height: 540px;
+			margin: 10px auto;
+			border: 2px solid #d3d3d3;
+		}
+	</style>
 </head>
 
 <body>
-    <iframe src="sb_map.html" width="100%" height="440px"></iframe>
-    <section>
-        <a href='sb_map.html' class="linkbox">Full-screen version</a>
+	<section>
+		<!--The title shown on the page-->
+		<h1>Red River Gorge</h1>
 
-        <img src="arches.svg" class="svg-title">
-        <h1>Sky Bridge and the Named Arches of the U.S.</h1>
-        <h2>University of Kentucky Geography</h2>
-        <div class="row">
-            <div class="first-column">
-			<h3>About Sky Bridge</h3>
-                <p>
-					Sky Bridge is just one of the many beautiful arches that rest within the Red River Gorge. The arch itself is 
-					approximately 90-100ft across and approximately 30-40ft high. Sky Bridge is part of the Sky Bridge Loop Trail
-					which is about 0.8 miles long. 
-                    
-                </p>
-                <h3>Tools used in this project</h3>
-                <ul>
-                    <li>ArcGIS Pro was used to process lidar data and produce elevation derivatives.</li>
-                    <li>Data is shown on Mapbox web map with geolocation services enabled. </li>
-                    
-                </ul>
+		<!-- The map -->
+		<div id='map'></div>
 
+		<!-- Your second heading -->
+		<h2>WELCOME</h2>
 
-                <hr>
-                <h3>Data Used</h3>
-                <ul>
-                <p>
-					Arches extracted from the Domestic and Antarctic Names (State and Topical Gazetteer) published by
-					the United States Board on Geographic Names. (<a hred="https://geonames.usgs.gov/domestic">geonames.usgs.gov</a>)
-					Data accessed August, 2018. Elevation data was extract from lidar point cloud data maintained by Kentucky's Elevation Data & Aerial Photography Program(<a href="http://kyfromabove.ky.gov">KyFromAbove</a>)
-					Elevation contours are in 20ft intervals with an index contour every 100ft.
+		<!-- Metadata about the project -->
+		<p>This is a map of the Red River Gorge! </p>
+		
+		<!-- More info about you -->
+		<hr>
+		<h3>More about Me!</h3>
+		<ul>
+			<li>See my projects on GitHub:
+				<a href="https://github.com/KDoh12">KDoh12 Maps</a> </li>
 
-				</p>
-			    </ul>
-				<h3>Project Assets</h3>
-				<p>
-					Link for point locations of U.S. Arches as a <a href="https://uky-gis.github.io/maps/us-arches/arches_us.geojson"download>GeoJSON file</a> 
-                    <!-- <li><a href="arches_us.geojson" download>point locations GeoJSON</a></li>-->
-                </ul>
-                </p>
+		</ul>
+	</section>
 
+	<!-- Load the library that provides interactive map functionality -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.4/leaflet.js"></script>
 
-            </div>
-            <div class="column">
-                <img class="max-image-width" src="graphics/sky_bridge_under_side.jpg"
-                    title="Sky Bridge">
-                <div class="linkbox">Photograph by Kevin Dohner</div>
+	<!-- Make the instructions that tell the library how to handle requests -->
+	<script>
+		// FYI: The double forward slash makes a comment in the script tag
 
-            </div>
-        </div>
+		// Define a variable that centers the intial view and zoom level. 
+		var options = {
+			center: [37.8332, -83.6077], // lat, long values of Gladie Visitor center
+			zoom: 12.4 // Integer value. Higher value greater the scale.
+		}
 
+		// write a custom message for the Leaflet tooltip
+		var message = 'Gladie Visitor Center';
 
-        <hr>
-        <!-- <h4><a href="https://uky-gis.github.io">UKy GIS and Mapping</a></h4> -->
-        <a href="https://github.com/KDoh12">My Github Page</a>
-    </section>
+		// ------------------------------------------------------ 
+		// Below are parameters you can learn to manipulate in GEO 405 and GEO 672.
+		
+		// Create a Leaflet map in our division container with id of 'map'
+		var map = L.map('map', options);
+
+		// request some basemap tiles and add to the map
+		var tiles = L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
+			attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="http://cartodb.com/attributions">Carto</a>',
+			subdomains: 'abcd',
+			maxZoom: 19
+		}).addTo(map);
+
+		// add a marker to the center of the map and open the tooltip
+		L.marker(map.getCenter())
+			.bindTooltip(message)
+			.addTo(map)
+			.openTooltip();
+	</script>
+
 </body>
+
 </html>
