@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset=utf-8 />
-    <title>Sky Bridge and the Named Arches of the U.S.</title>
+    <title>Sky Bridge, Red River Gorge</title>
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css" />
@@ -146,24 +146,34 @@
 <body>
     <iframe src="sb_map.html" width="100%" height="440px"></iframe>
     <section>
-        <a href='sb_map.html' class="linkbox">Full-screen version</a>
+        <a href='sb_map.html' class="linkbox">Map of Sky Bridge and Other Named Arches in U.S.</a>
 
         <img src="arches.svg" class="svg-title">
-        <h1>Sky Bridge and the Named Arches of the U.S.</h1>
+        <h1>Sky Bridge, Red River Gorge</h1>
         <h2>University of Kentucky Geography</h2>
+        <h2>Project by Kevin Dohner</h2>
         <div class="row">
             <div class="first-column">
 			<h3>About Sky Bridge</h3>
                 <p>
-					Sky Bridge is just one of the many beautiful arches that rest within the Red River Gorge. The arch itself is 
-					approximately 90-100ft across and approximately 30-40ft high. Sky Bridge is part of the Sky Bridge Loop Trail
-					which is about 0.8 miles long. 
+					Sky Bridge is just one of the many beautiful sandstone arches that rest within the Red River Gorge. The arch itself is 
+                    approximately 90ft long, 20ft wide, and 50ft from the ground. From the top of Sky Bridge, one can see breathtaking views of the surrounding cliffs and Clifty Wilderness.  
                     
                 </p>
+                <p>
+                    Sky Bridge can be accessed via the well maintained, and partially blacktopped Sky Bridge Loop Trail at the end of Sky Bridge Road. The trail is a short and easy hike with it being only 0.8mi long. Despite the short hike, this trail offers stunning views of the Gorge and the cliffs surrounding Sky Bridge.  
+
+                </p>
+                <h3>Map of Cliffs Greater than 40ft Around Sky Bridge</h3>
+                    <img class="max-image-width" src="elevation/graphics/SkyBridgeCliffMap_300.jpg"
+                        title="Sky Bridge Cliff Heights">
+                    <div class="linkbox"><a href="elevation/graphics/SkyBridgeCliffMap_300.jpg">Cliff Heights Greater Than 40ft Around Sky Bridge</a></div>
+                
                 <h3>Tools used in this project</h3>
                 <ul>
                     <li>ArcGIS Pro was used to process lidar data and produce elevation derivatives.</li>
                     <li>Data is shown on Mapbox web map with geolocation services enabled. </li>
+                    <li>Focal Statistics Tool was used to produce cliff heights</li>
                     
                 </ul>
 
@@ -171,28 +181,43 @@
                 <hr>
                 <h3>Data Used</h3>
                 <ul>
-                <p>
-					Arches extracted from the Domestic and Antarctic Names (State and Topical Gazetteer) published by
-					the United States Board on Geographic Names. (<a hred="https://geonames.usgs.gov/domestic">geonames.usgs.gov</a>)
-					Data accessed August, 2018. Elevation data was extract from lidar point cloud data maintained by Kentucky's Elevation Data & Aerial Photography Program(<a href="http://kyfromabove.ky.gov">KyFromAbove</a>)
-					Elevation contours are in 20ft intervals with an index contour every 100ft.
-
-				</p>
-			    </ul>
-				<h3>Project Assets</h3>
-				<p>
-					Link for point locations of U.S. Arches as a <a href="https://uky-gis.github.io/maps/us-arches/arches_us.geojson"download>GeoJSON file</a> 
-                    <!-- <li><a href="arches_us.geojson" download>point locations GeoJSON</a></li>-->
+                    <li>Arches extracted from place names published by <a href="https://geonames.usgs.gov/domestic">U.S. Board on Geographic Names</a></li>
+                    <li>Elevation data extracted from lidar point clouds made available from <a href="http://kyfromabove.ky.gov">KyFromAbove</a></li>
+                    <li>2016 NAIP Imagery used in Animation obtained from <a href="https://earthexplorer.usgs.gov/">EarthExplorer</a></li>
+                    <li>Photos of Sky Bridge taken by Me during visit to Arch</li>
+                
                 </ul>
+                <div>
+                <img class="max-image-width" src="basemap/graphics/sb_under_2.jpg"
+                    title="Side View of Arch">
+                <div class="linkbox">View of Arch from Below It</div>
+                </div>
                 </p>
 
 
             </div>
             <div class="column">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/u8aNy3jDmtc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                
+                <img src="../graphics/SkyBridgeCliffMap_72.jpg" width="560" alt="Animation of Sky Bridge and Cliff Heights using Lidar">
+
+                <a href="https://www.youtube.com/watch?v=u8aNy3jDmtc"></a>
+
                 <img class="max-image-width" src="graphics/sky_bridge_under_side.jpg"
                     title="Sky Bridge">
-                <div class="linkbox">Photograph by Kevin Dohner</div>
-
+                <div class="linkbox">View of the Arch from Below</div>
+                <img class="max-image-width" src="basemap/graphics/sb_trail.jpg"
+                    title="Sky Bridge Trail">
+                <div class="linkbox">View of the trail from top the Arch</div>
+                <img class="max-image-width" src="basemap/graphics/sb_viewtop.jpg"
+                    title="Sky Bridge View">
+                <div class="linkbox">View of Cliffs from top of Arch</div>
+                <img class="max-image-width" src="basemap/graphics/sb_topside.jpg"
+                    title="Sky Bridge Beneath">
+                <div class="linkbox">What's Beneath Viewed from Above</div>
+                <img class="max-image-width" src="basemap/graphics/sb_secondary_arch.jpg"
+                    title="Secondary Arch">
+                <div class="linkbox">A Secondary Arch Underneath Sky Bridge</div>
             </div>
         </div>
 
